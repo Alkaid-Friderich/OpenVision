@@ -1,0 +1,28 @@
+name: Feature proposal
+description: Propose an improvement or new project direction
+title: "[Proposal]: "
+labels: ["proposal"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What concrete problem should OpenVision solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Describe the behavior, data model, or implementation you suggest.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs
+  - type: textarea
+    id: ethics
+    attributes:
+      label: Privacy, consent, and provenance impact
+      description: Explain any effect on sensitive data or content authenticity.

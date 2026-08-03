@@ -1,0 +1,48 @@
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+.cache/
+
+# JavaScript
+node_modules/
+dist/
+build/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Native builds
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Large local recordings and generated assets
+*.ovx
+recordings/
+datasets/
+artifacts/
