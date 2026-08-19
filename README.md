@@ -1,55 +1,63 @@
 # OpenVision
 
-> See again what you once saw. See what others could see.
->
-> 重新看见自己曾经看见的，也能在获得授权的前提下，看见他人所见。
+[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [Français](README.fr.md) | [Italiano](README.it.md) | [한국어](README.ko.md)
 
-OpenVision is an open-source initiative exploring how human-visible experience can be captured, represented, reconstructed, and displayed across devices.
+> See again what you once saw. See what others could see—with permission.
 
-OpenVision 是一个探索人类视觉经验数字化的开源项目。我们希望建立从视觉采集、开放表征、空间重建到跨设备显示的端到端技术体系。
+OpenVision is an open-source initiative for trusted first-person experiential media: capture, replay, private sharing, and provenance.
 
 ## Why OpenVision?
 
-Today's cameras record images. OpenVision explores how to preserve the observer's viewpoint: imagery, stereo vision, motion, depth, gaze, optics, time, and provenance.
+Today's media can preserve images while losing the point of view, context, and trust information that make a personal experience meaningful. Recordings may also become locked inside one device, application, or account.
 
-The project does not claim to reproduce consciousness or read visual memory. Its goal is to build measurable, inspectable technology that progressively approaches a faithful reconstruction of what was visible to an observer.
+OpenVision explores a more human-centered path: help people preserve meaningful moments from their own point of view, revisit them later, share them intentionally, and understand where the media came from and how it changed.
 
-## Initial scope
+The project does not claim to reproduce consciousness, read visual memory, or determine whether every piece of media is “real” or “fake.”
 
-The first milestone is a narrow end-to-end pipeline:
+## What we aim to build
 
-1. Capture first-person video, device pose, and calibration metadata.
-2. Package them in an open, inspectable OVX recording.
-3. Replay the recording with the original orientation and field of view in a browser or WebXR device.
+- **Capture:** create first-person records with clear origin information.
+- **Replay:** revisit an experience across supported devices and applications.
+- **Private sharing:** choose who can access personal media and for how long, where technically possible.
+- **Provenance:** preserve understandable information about origin and transformation.
+- **Portability:** let people retain and move their records without permanent dependence on one provider.
 
-Later phases may add stereo capture, eye tracking, depth, six-degree-of-freedom reconstruction, HDR appearance, and perception-aware display.
+OpenVision is in its founding stage. These are public goals, not claims of a stable specification or production-ready implementation.
 
-## Project areas
+## Trust model
 
-- **Capture** — reference mobile and wearable capture implementations.
-- **OVX** — an extensible format for visual recordings and their provenance.
-- **Processing** — synchronization, calibration, stabilization, and spatial reconstruction.
-- **Player** — cross-device playback for browsers, XR headsets, and future displays.
-- **Evaluation** — reproducible tests for geometric, temporal, optical, and perceptual fidelity.
+Verified provenance is not universal AI-fake detection. OpenVision uses three top-level states:
 
-## Status
+- **Verified capture:** participating systems can verify the declared capture origin and the history they attest to.
+- **Declared synthetic or enhanced:** synthetic, generated, reconstructed, or materially enhanced content is clearly identified.
+- **Unknown provenance:** origin or history cannot be sufficiently verified. Unknown does not mean fake.
 
-OpenVision is in its founding stage. The current material defines the direction and a draft structure; it is not yet a stable specification or production implementation.
-
-Start with [RFC 0000: Open Vision Manifesto](docs/rfc-0000-open-vision-manifesto.md), then see the [project vision](docs/vision.md), [roadmap](docs/roadmap.md), and [OVX draft](specs/ovx/README.md).
+Provenance supports specific, inspectable claims. It does not replace context, consent, journalism, or human judgment.
 
 ## Principles
 
-- Preserve original sensor data and store processing as traceable derivatives.
-- Make time synchronization, calibration, and device descriptions first-class data.
-- Clearly label captured, reconstructed, inferred, and generated content.
-- Design for incomplete recordings and progressive enhancement.
-- Treat consent, privacy, ownership, and revocation as architectural requirements.
+- Put human agency, dignity, and accessibility first.
+- Make privacy and meaningful consent product foundations.
+- Prefer private-by-default experiences and understandable controls.
+- Separate source material from synthetic or enhanced derivatives.
+- Keep records portable and trust claims honest about their limits.
+- Build open foundations that can coexist with independent and proprietary products.
 
-## Contributing
+## Directional roadmap
 
-Early contributions are welcome in specification design, capture, reconstruction, playback, perception research, privacy, and documentation. Read [CONTRIBUTING.md](CONTRIBUTING.md), [ETHICS.md](ETHICS.md), and [GOVERNANCE.md](GOVERNANCE.md) before opening a proposal.
+1. **Foundation:** establish shared vocabulary, ethics, governance, and interoperability goals.
+2. **Capture and replay:** deliver a useful path for creating and revisiting first-person records.
+3. **Private sharing:** improve selective access, portability, and transparent handling.
+4. **Ecosystem:** enable interoperable implementations and, over time, broader open and decentralized participation.
+
+Progress depends on demonstrated user value, safety, privacy, and trustworthiness—not only technical capability.
+
+## Open collaboration
+
+OpenVision welcomes public proposals, research, documentation, reference work, and critical review. Shared interfaces and trust principles should allow open-source, commercial, and proprietary implementations to participate honestly in the same ecosystem.
+
+Start with [RFC 0000: Open Vision Manifesto](docs/rfc-0000-open-vision-manifesto.md). You can also read the [project vision](docs/vision.md), [roadmap](docs/roadmap.md), [ethics principles](ETHICS.md), [governance](GOVERNANCE.md), and [contribution guide](CONTRIBUTING.md).
 
 ## License
 
-Code and project documentation are currently released under the [Apache License 2.0](LICENSE), unless a file states otherwise. Sample recordings and model weights may use separate, explicitly documented terms.
+Code and project documentation are released under the [Apache License 2.0](LICENSE), unless a file states otherwise. Other assets may use separate, explicitly documented terms.
