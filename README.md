@@ -36,7 +36,7 @@ Later phases may add stereo capture, eye tracking, depth, six-degree-of-freedom 
 
 OpenVision is in its founding stage. The current material defines the direction and a draft structure; it is not yet a stable specification or production implementation.
 
-See the [project vision](docs/vision.md), [roadmap](docs/roadmap.md), and [OVX draft](specs/ovx/README.md).
+Start with [RFC 0000: Open Vision Manifesto](docs/rfc-0000-open-vision-manifesto.md), then see the [project vision](docs/vision.md), [roadmap](docs/roadmap.md), and [OVX draft](specs/ovx/README.md).
 
 ## Principles
 
